@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Байэл — разработчик</title>
+  <meta name="description" content="Байэл — разработчик. Создаю сайты под ключ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Raleway:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="top">
+    <nav class="nav container">
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="#top">Главная</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#testimonials">Отзывы</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1>Байэл</h1>
+          <p>Я разработчик. Делаю крутые сайты, которые выглядят дорого и приносят клиентов. Продаю свои услуги: от идеи до готового проекта.</p>
+          <a href="#contact" class="btn btn--green">Заказать сайт &rsaquo;</a>
+        </div>
+        <img class="hero__photo" src="ya.jpeg" alt="Байэл">
+      </div>
+
+      <div class="container skills">
+        <p>Работаю с</p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <h2>Мои услуги</h2>
+        <p class="section__sub">Решаю бизнес-задачи с помощью сайтов. Вот что я могу сделать для тебя.</p>
+
+        <article class="service">
+          <div class="service__text">
+            <span class="tag tag--orange">Сайты</span>
+            <h3>Лендинги и сайты-визитки</h3>
+            <p>Одностраничные сайты, которые быстро объясняют, чем ты занимаешься, и собирают заявки.</p>
+            <a href="#contact" class="btn btn--orange">Заказать &rsaquo;</a>
+          </div>
+          <div class="service__box box--orange">01</div>
+        </article>
+
+        <article class="service service--reverse">
+          <div class="service__text">
+            <span class="tag tag--blue">Магазины</span>
+            <h3>Интернет-магазины</h3>
+            <p>Каталог, корзина и удобный заказ. Всё продумано так, чтобы покупатель дошёл до оплаты.</p>
+            <a href="#contact" class="btn btn--blue">Заказать &rsaquo;</a>
+          </div>
+          <div class="service__box box--blue">02</div>
+        </article>
+
+        <article class="service">
+          <div class="service__text">
+            <span class="tag tag--teal">Адаптив</span>
+            <h3>Адаптивная вёрстка</h3>
+            <p>Переведу макет в аккуратный код. Сайт одинаково хорошо смотрится на телефоне, планшете и компьютере.</p>
+            <a href="#contact" class="btn btn--teal">Заказать &rsaquo;</a>
+          </div>
+          <div class="service__box box--teal">03</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="testimonials">
+      <div class="container">
+        <h2>Отзывы</h2>
+        <p class="section__sub">Что говорят клиенты о работе со мной.</p>
+
+        <div class="reviews">
+          <blockquote class="review">
+            <p>Сайт сделан быстро и ровно так, как я хотел. Рекомендую!</p>
+            <footer><span class="avatar">А</span>Клиент 1</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>Понятно объясняет, не тянет сроки. Результатом доволен.</p>
+            <footer><span class="avatar">Б</span>Клиент 2</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>Аккуратная вёрстка, всё отлично работает на телефоне.</p>
+            <footer><span class="avatar">В</span>Клиент 3</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>Заявки с сайта пошли уже в первую неделю. Спасибо!</p>
+            <footer><span class="avatar">Г</span>Клиент 4</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark section--contact" id="contact">
+      <div class="container">
+        <h2>Связаться со мной</h2>
+        <p class="section__sub">Напиши, что нужно сделать, и я отвечу как можно скорее.</p>
+
+        <form class="form" action="#" method="post">
+          <label for="email">Почта</label>
+          <input type="email" id="email" name="email" placeholder="Введите почту" required>
+
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" placeholder="Введите номер">
+
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" placeholder="Опишите задачу" rows="5" required></textarea>
+
+          <button type="submit" class="btn btn--green btn--full">Отправить &rsaquo;</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Сделано с &hearts; Байэл</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Наверх">&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
